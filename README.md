@@ -14,6 +14,7 @@ regenerates them all with a single command.
 ## Contents
 
 - [The problem](#the-problem)
+- [The six-slide tour](#the-six-slide-tour)
 - [Quickstart](#quickstart)
 - [Features at a glance](#features-at-a-glance)
 - [One shot list, four kinds of shot](#one-shot-list-four-kinds-of-shot)
@@ -35,6 +36,32 @@ they're embarrassingly wrong.
 `shotlist` makes them **reproducible**: describe *how to start your app* and *what
 to shoot* once, in a committed `.shotlist.yaml`, then regenerate the whole set on
 demand — locally or in CI. Same config + same app state → same screenshots.
+
+## The six-slide tour
+
+The whole idea in one minute — click any slide to open the deck as a PDF
+([`docs/deck/shotlist-deck.pdf`](docs/deck/shotlist-deck.pdf)):
+
+[<img src="docs/deck/01-cover.png" width="100%" alt="Cover: your AI agent says everything works — shotlist makes it show receipts, real screenshots captured outside the model versus an unverifiable claim"/>](docs/deck/shotlist-deck.pdf)
+
+<details>
+<summary><b>The other five slides</b> — the engine, the AI proof loop, the CI drift gate, sessions, and getting started</summary>
+<br>
+
+[<img src="docs/deck/02-architecture.png" width="100%" alt="How shotlist works: one committed YAML routed through a deterministic engine to four capture backends"/>](docs/deck/shotlist-deck.pdf)
+
+[<img src="docs/deck/03-agent-loop.png" width="100%" alt="AI agents author the shot list once; every capture after that is a deterministic, token-free CLI run"/>](docs/deck/shotlist-deck.pdf)
+
+[<img src="docs/deck/04-drift-gate.png" width="100%" alt="The CI drift gate: shotlist check re-captures on every PR and blocks merges on unexpected pixel drift"/>](docs/deck/shotlist-deck.pdf)
+
+[<img src="docs/deck/05-session-flow.png" width="100%" alt="A shotlist session: three steps in one persistent shell, one PNG per step, guaranteed teardown"/>](docs/deck/shotlist-deck.pdf)
+
+[<img src="docs/deck/06-cta.png" width="100%" alt="Get started: pip install shotlist, shotlist init, shotlist run — every slide in this deck was captured by shotlist itself"/>](docs/deck/shotlist-deck.pdf)
+
+</details>
+
+Like everything else in this repo, the slides are shotlist output: six local HTML
+pages captured by one `shotlist run` (`kind: web`), assembled into a PDF.
 
 ## Quickstart
 
