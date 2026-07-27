@@ -235,6 +235,4 @@ pretending to reproduce.
 | [`check.py`](../src/shotlist/check.py) + [`diff.py`](../src/shotlist/diff.py) | drift comparison and visual diffs |
 | [`cli.py`](../src/shotlist/cli.py) | the `init` / `validate` / `run` / `check` commands |
 
-For the design rationale and the decisions behind these boundaries, see
-[`design.md`](design.md); for CI usage and the GitHub Action, see
-[`pipeline.md`](pipeline.md).
+For CI usage and the GitHub Action, see [`pipeline.md`](pipeline.md).
