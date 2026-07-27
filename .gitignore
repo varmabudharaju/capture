@@ -11,6 +11,7 @@ venv/
 .env
 
 # Tooling caches
+.claude/
 .pytest_cache/
 .ruff_cache/
 .mypy_cache/
